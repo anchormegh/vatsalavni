@@ -7,6 +7,15 @@
     --gold-gradient: linear-gradient(135deg, #bf953f 0%, #fcf6ba 50%, #aa771c 100%);
 }
 
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    position: relative;
+}
+
 body {
     background-color: var(--silk-white);
     color: var(--deep-purple);
