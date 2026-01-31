@@ -11,7 +11,7 @@ body {
     background-color: var(--silk-white);
     color: var(--deep-purple);
     font-family: 'Cormorant Garamond', serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /* Typography Helpers */
@@ -535,4 +535,75 @@ p,
 .address-content p {
     color: var(--deep-purple);
     font-family: 'Cormorant Garamond', serif;
+}
+
+.countdown-item {
+    min-width: 60px;
+    padding: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    /* Matches your save-date-border */
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+
+    /* Adjust hero section height for mobile */
+    .min-vh-100 {
+        min-height: 70vh !important;
+    }
+
+    .min-vh-50 {
+        min-height: 400px !important;
+    }
+
+    /* Reduce large section padding */
+    .py-10 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    /* Scale down large typography */
+    .display-1 {
+        font-size: 4.5rem;
+    }
+
+    .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .display-6 {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust the hero text positioning */
+    .hero-split .p-5 {
+        padding: 2rem !important;
+    }
+
+    /* Fix countdown spacing */
+    #countdown {
+        gap: 0.5rem !important;
+    }
+
+    .countdown-item span.h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Ensure ornaments don't overlap text on small screens */
+    .corner-ornament {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Specific fix for very small devices */
+@media (max-width: 480px) {
+    .save-date-border {
+        padding: 2rem 1rem !important;
+    }
+
+    .display-1 {
+        font-size: 3.5rem;
+    }
 }
